@@ -5,11 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Helper function to check password strength (simple example)
-const checkPasswordStrength = (password) => {
+const checkPasswordStrength = (password: string): string => {
   if (password.length < 6) return "Weak";
   if (password.length < 10) return "Medium";
   return "Strong";
 };
+
 
 // Component for the step-by-step progress sidebar on the right
 const StepProgress = () => {
