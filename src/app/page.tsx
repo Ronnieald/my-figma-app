@@ -25,6 +25,12 @@ export default function HomePage() {
         aria-label="Toggle dark mode"
       >
         {/* SVG icon for a moon/dark mode indicator */}
+
+        {/* Esther's comment (1) , i use React-icon most times(preference). svg is cool too but this icon 
+        is not doing its job, most=times the half-moon icon works best. also learn how to use react-icon
+        
+        (2) Don't forget the usage of primary and secondary button for the welcome screen*/}
+
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0015 2.25c5.385 0 9.75 4.365 9.75 9.75a9.753 9.753 0 01-3.748 12.752z" />
         </svg>

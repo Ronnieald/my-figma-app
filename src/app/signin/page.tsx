@@ -101,18 +101,22 @@ export default function SignInPage() {
       </div>
       
       {/* --------------------- */}
-
+       {/*Esther's comment:(5) There is a background image in the design, kindly add it */}
       {/* Right Section: Visual Panel */}
       <div className="hidden lg:flex flex-1 relative bg-gradient-to-tr from-[#89b3f3] to-[#4c75e2] text-white p-12 h-screen">
         <Image src="/images/Laptop_1.png" alt="Laptop illustration" width={500} height={500} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
         
         {/* Quote Section at the bottom */}
+        {/*Esther's comment: (6)
+          the text is alligned to the center in the design.  */}
         <div className="relative z-10 mt-auto w-full">
           <p className="text-5xl font-serif text-white/50 mb-2">“</p>
           <p className="text-sm italic font-light leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <p className="text-xs mt-1 text-right font-semibold">- Author’s Name</p>
+          <p className="text-xs mt-1 text-right font-semibold">- Author’s Name</p> 
+          
+          {/* Decorative Line */}
         </div>
       </div>
     </div>

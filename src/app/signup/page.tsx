@@ -77,6 +77,11 @@ export default function SignUpPage() {
         {/* Main Content Wrapper: This will hold the navigation and the form */}
         <div className="flex flex-col items-center justify-center">
             {/* Top Navigation */}
+
+            {/* Esther's comment (3)
+            please Note: always check your designs. the reason why this is not aligning to the top is beacuse 
+            it is grouped with the form container, it should be with puzzle man logo with stying justify-end*/}
+
             <div className="flex justify-end items-start w-full max-w-lg mb-8">
               <div className="flex items-center space-x-2 text-sm text-gray-700">
                 <span className="hidden md:inline">Already a Member?</span>
@@ -162,8 +167,12 @@ export default function SignUpPage() {
       </div>
       
       {/* Right Section: Visual Panel with Step Progress */}
+
+      {/* Esther's comment: (4)
+      this content can be aligned to the center by adding "items-center" 
+      i did that already tho so take note */}
       {/* Updated: This now also uses `min-h-screen` */}
-      <div className="hidden lg:flex flex-1 relative bg-gradient-to-tr from-[#1b2641] to-[#4a63e9] text-white p-12 min-h-screen">
+      <div className="hidden lg:flex flex-1 relative items-center bg-gradient-to-tr from-[#1b2641] to-[#4a63e9] text-white p-12 min-h-screen">
         <div className="relative z-10 w-full">
           <StepProgress />
         </div>
