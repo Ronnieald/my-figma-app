@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 // Helper function to check password strength (simple example)
 const checkPasswordStrength = (password) => {
@@ -65,9 +67,9 @@ export default function SignUpPage() {
 
         {/* Puzzlerman title and icon moved to top-left with absolute positioning */}
         <div className="absolute top-6 left-12 flex items-center space-x-2">
-          <a href="/">
-            <img src="images/Puzzle_Icon.png" alt="App Logo" className="w-6 h-6" />
-          </a>
+          <Link href="/">
+            <Image src="/images/Puzzle_Icon.png" alt="App Logo" width={24} height={24} />
+          </Link>
           <span className="text-xl font-semibold text-gray-800">Puzzlerman</span>
         </div>
 
@@ -77,11 +79,11 @@ export default function SignUpPage() {
             <div className="flex justify-end items-start w-full max-w-lg mb-8">
               <div className="flex items-center space-x-2 text-sm text-gray-700">
                 <span className="hidden md:inline">Already a Member?</span>
-                <a href="/signin">
+                <Link href="/signin">
                   <button className="px-4 py-2 text-blue-600 border border-blue-600 rounded-md hover:bg-blue-50 transition-colors">
                     Log In
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
             
@@ -146,8 +148,8 @@ export default function SignUpPage() {
               {/* Legal Disclaimer */}
               <p className="mt-8 text-xs text-gray-500 text-center max-w-sm">
                 By Creating an Account, it means you agree to our{" "}
-                <span className="underline text-gray-700">Privacy Policy</span> and{" "}
-                <span className="underline text-gray-700">Terms of Service</span>.
+                <Link href="#" className="underline text-gray-700">Privacy Policy</Link> and{" "}
+                <Link href="#" className="underline text-gray-700">Terms of Service</Link>.
               </p>
 
               {/* Copyright Text */}
@@ -168,4 +170,3 @@ export default function SignUpPage() {
     </div>
   );
 }
-

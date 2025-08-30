@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function SignInPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,9 +17,9 @@ export default function SignInPage() {
         
         {/* Puzzlerman title and icon moved to top-left with absolute positioning */}
         <div className="absolute top-6 left-12 flex items-center space-x-2">
-          <a href="/">
-            <img src="images/Puzzle_Icon.png" alt="App Logo" className="w-6 h-6" />
-          </a>
+          <Link href="/">
+            <Image src="/images/Puzzle_Icon.png" alt="App Logo" width={24} height={24} />
+          </Link>
           <span className="text-xl font-semibold text-gray-800">Puzzlerman</span>
         </div>
 
@@ -28,11 +29,11 @@ export default function SignInPage() {
           <div className="flex justify-end items-start w-full max-w-lg mb-8">
             <div className="flex items-center space-x-2 text-sm text-gray-700">
               <span className="hidden md:inline">No account yet?</span>
-              <a href="/signup">
+              <Link href="/signup">
                 <button className="px-4 py-2 text-blue-600 border border-blue-600 rounded-md hover:bg-blue-50 transition-colors">
                   Sign Up
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -77,9 +78,9 @@ export default function SignInPage() {
                   <input type="checkbox" className="rounded text-blue-600 focus:ring-blue-600" />
                   <span className="text-sm">Remember me</span>
                 </label>
-                <a href="#" className="underline hover:text-blue-600 transition-colors">
+                <Link href="#" className="underline hover:text-blue-600 transition-colors">
                   Forgot Password?
-                </a>
+                </Link>
               </div>
 
               {/* Submit Button */}
@@ -103,7 +104,7 @@ export default function SignInPage() {
 
       {/* Right Section: Visual Panel */}
       <div className="hidden lg:flex flex-1 relative bg-gradient-to-tr from-[#89b3f3] to-[#4c75e2] text-white p-12 h-screen">
-        <img src="/images/Laptop_1.png" alt ="Laptop illustration" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+        <Image src="/images/Laptop_1.png" alt="Laptop illustration" width={500} height={500} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
         
         {/* Quote Section at the bottom */}
         <div className="relative z-10 mt-auto w-full">
